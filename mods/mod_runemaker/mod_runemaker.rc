@@ -1,0 +1,245 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mod_runemaker.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOG DISCARDABLE  0, 0, 229, 366
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Module: Rune Maker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Backpack Viewer",IDC_FRAME_BACKPACK_VIEWER,7,7,215,63
+    GROUPBOX        "Rune Options",IDC_FRAME_RUNE_OPTIONS,7,72,215,121
+    GROUPBOX        "General Options",IDC_FRAME_GENERAL_OPTIONS,7,195,215,93
+    GROUPBOX        "Statistics",IDC_FRAME_STATISTICS,7,290,215,34
+    DEFPUSHBUTTON   "OK",IDOK,95,345,50,14
+    CONTROL         "Enable rune maker",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,7,327,215,14
+    CONTROL         "List1",IDC_TOOL_RUNEMAKER_CONT,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,14,18,201,46
+    EDITTEXT        IDC_TOOL_RUNEMAKER_RUNESPELL,60,84,155,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOOL_RUNEMAKER_SOUL,60,100,26,14,ES_AUTOHSCROLL
+    LTEXT           "Rune spell:",IDC_STATIC,14,84,38,14,SS_CENTERIMAGE
+    LTEXT           "Mana limit:",IDC_STATIC,14,116,38,14,SS_CENTERIMAGE
+    LTEXT           "Total blank runes: 0",IDC_TOOL_RUNEMAKER_INFO_BLANKS,14,
+                    301,99,8
+    LTEXT           "Food for: 0s",IDC_TOOL_RUNEMAKER_INFO_FOOD,14,312,99,8
+    LTEXT           "Blanks for: 0s",IDC_TOOL_RUNEMAKER_INFO_RUNETIME,113,
+                    301,99,8
+    LTEXT           "Soul points:",IDC_STATIC,14,100,38,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TOOL_RUNEMAKER_MANALIMIT,60,116,26,14,ES_AUTOHSCROLL
+    LTEXT           "Rune mana:",IDC_STATIC,93,100,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TOOL_RUNEMAKER_MANA,135,100,26,14,ES_AUTOHSCROLL
+    CONTROL         "Promoted Player (for stats only)",IDC_TOOL_PREMIUM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,247,180,10
+    CONTROL         "Use up all mana when limit reached",IDC_TOOL_MAXMANAUSE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,237,180,10
+    LTEXT           "Soulpoints for: 0s",
+                    IDC_TOOL_RUNEMAKER_INFO_SOULPOINTSTIME,113,312,99,8
+    PUSHBUTTON      "Add vv",IDC_ADDSPELLTOLIST,93,117,33,12
+    PUSHBUTTON      "Load ^^",IDC_LOADSPELLFROMLIST,138,117,34,12
+    PUSHBUTTON      "Delete",IDC_DELETEFROMLIST,184,118,31,11
+    CONTROL         "List2",IDC_TOOL_RUNEMAKER_SPELLS,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,14,133,201,54
+    CONTROL         "Make ASAP",IDC_MAKENOW,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,171,101,44,12
+    CONTROL         "Random cast at up to 10% more mana",IDC_TOOL_RANDOMCAST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,257,180,10
+    CONTROL         "Use spear instead of blank rune",IDC_TOOL_USESPEAR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,207,180,10
+    CONTROL         "Use arrow slot if hands busy",IDC_TOOL_USEARROW,"Button",
+                    BS_AUTORADIOBUTTON,24,217,138,10
+    CONTROL         "Use backpack if hands busy",IDC_USE_BACKPACK,"Button",
+                    BS_AUTORADIOBUTTON,24,227,138,10
+END
+
+IDD_TOOL_CONTAINERCONTENT DIALOG DISCARDABLE  0, 0, 191, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Container content"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Backpack Contents",IDC_FRAME_BACKPACK_CONTENTS,7,7,177,
+                    177
+    DEFPUSHBUTTON   "OK",IDOK,69,187,50,15
+    CONTROL         "List1",IDC_CONTAINERCONTENT_LIST,"SysListView32",
+                    LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,
+                    14,18,163,161
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        VERTGUIDE, 14
+        VERTGUIDE, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+
+    IDD_TOOL_CONTAINERCONTENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        VERTGUIDE, 14
+        VERTGUIDE, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+        HORZGUIDE, 18
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "mod_runemaker DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "mod_runemaker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "mod_runemaker.DLL\0"
+            VALUE "ProductName", "mod_runemaker Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\mod_runemaker.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

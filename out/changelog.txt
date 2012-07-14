@@ -1,0 +1,1158 @@
+2.9.1, ??.4.2011
+Enhancements:
+Defects:
+
+2.9.0, 20.4.2011
+Enhancements:
+ ShowMap: Made extended research a savable parameter
+ Maphacks: Added auto-mounting
+ Python: Added mount functions
+Defects:
+ Autogo: Fixed problem where spells that were substrings of another spell were not cast
+ Cavebot: Looting no longer gets interrupted by other walkers
+ Added automount feature to Maphacks, anytime it can, it will eventually mount
+ Python: Fixed problem with python scripts staying enabled after a new config has been loaded
+ Autolooter: Fixed autolooter trying to open non-corpses
+ Cavebot: Fix loot dropper list when saves and loads
+
+
+2.8.3, 4.3.2011
+Enhancements:
+ Spellcaster: Added a quick fix ico spell to spellcaster
+ Banker: Added option to banker to withdraw cash if it has none
+ Auto login: it pauses all walking modules until all BPs are opened
+ 
+Defects:
+ Cavebot: Fixed bug causing Cavbot to stop running if the depot walker gets interrupted
+
+2.8.2, 29.1.2011
+Enhancements:
+ Tibia Auto: Updated to 8.71
+ items.xml: Added new items
+ Cavebot: Cavebot will automatically loot "new" items if their ID is above a certain constant(which will increase each release)
+ 
+Defects:
+ Tibia Auto: Fixed bug causing TA to crash when saying things between 124 and 252 characters long
+
+2.8.1, 16.1.2011
+Enhancements:
+ Seller & Banker: Displays location when path not found
+ Cavebot: Added better method for using "Reduced attack when player seen" (Fixes constantly attacking, then ignoring monster)
+ Cavebot: Depositer stops when BP closed manually
+ 
+Defects:
+ Tibia Auto: Removed Auto Aim
+ Fluid Drinker: Updated vocabulary
+ Seller & Banker: fixed not saving NPC locations to script file (you may need to resave xml file)
+ Maphacks: Fixed showing creature names from different levels
+ Cavebot: Fixed depot walker never walking to depot after cavebot is paused
+ Cavebot: Fixed infrequently trying to walk to point (0,0,0)
+ Autogo/Log: Fixed loading scripts and editing alarms with "Food" trigger saved in them
+ Various: When depositing/selling/banking the module doesn't lose control while it is busy with depot/NPC
+ Banker: Fixed banker not starting automatically when started by saved script
+ Cavebot: Fixed Backattack alien with rune
+ Seller & Banker: Not blocked by players
+
+2.8.0, 8.12.2010
+Enhancements: Update
+Defects:
+
+2.7.3, 3.12.2010
+Enhancements:
+ Various: Negative heal values in the fluid drinker, spellcaster, and runemaker heal at MaxHp/Mana - value
+ Cavebot: Added drop list to cavebot
+ Auto Login: TA does not save but can load passwords from scripts
+ Auto Go: Auto go internals changed and proximity settings take less CPU
+ Various: Autogo, seller, banker and cavebot all work together for control over walking
+ Various: Modules can be given priorities as to which will act first
+ Various: Can go to seller and/or banker and/or depot in the same trip into town
+ Various: Added status messages to walking modules(seller, banker, autogo,cavebot)
+ Cavebot: When cavebot enabled, pausebreak/%ta pause stops all movement from cavebot and other modules as well
+ Banker: The banker can change gold instead of depositing
+ Banker: The banker counts gold in hands and other slots
+ Cavebot: Can go though waypoints backwards
+ CVS Files: Bankers and Sellers only need 1 location
+ Various: Banker, seller and autogo detect gold and items in hand
+ AutoGo: Added alarm for VIP names in the VIP list
+ AutoGo: Added alarm for when conditions disappear 
+
+Defects:
+ Cavebot: Fixed Blood hit control
+ Cavebot: Fixed cavebot always looting plats and crystals 
+ Spellcaster: Fixed bug in casting spells
+ Spellcaster: Fixed problem with healing other using Sio
+
+2.7.2, 4.11.2010
+Enhancements:
+ Seller: Considers equipped items wen deciding what to buy and sell(still does not work well with AutoGo's StopWalking)
+
+Defects:
+ Cavebot: Fixed TA not attacking creatures after hunting for a long time
+ Cavebot: Fixed training option which sometimes accidentally puts your weapon into a creature if switching
+ Items: Fixed light shovel Id
+ Internal: waitForItemChange returns value
+
+
+2.7.1, 22.10.2010
+Enhancements:
+ Auto Login: Fixed Tibia window sometimes staying behind other windows when trying to log in 
+Defects:
+ Runemaker: Saves spell list properly
+ Runemaker: Making enchanted spears no longer crashes TA
+ Auto Go: Alarm for equipped items as well as those in open backpacks
+ Auto Go: Added alarm when hit for more than certain value
+ Item Config: Saves loot list all the time when saving script
+
+2.7.0, 23.9.2010
+Enhancements:
+ Updated to 8.62
+Defects:
+ Cave Bot: Fixed attacking creatures and players that have previously attacked you, but more than 30 seconds ago.
+ Auto Looter: Looting stackable items no longer does so in parts, it takes them all at once.
+ Spellcaster: Fixed delay on casting multiple times in a row.
+
+2.6.2, 9.6.2010
+Enhancements:
+Defects:
+ Cavebot: Bad memory leak in cavebot fixed
+
+2.6.1, 9.4.2010
+Enhancements:
+ Cavebot: Reduced CPU usage for depot walker check
+Defects
+ Maphack: Name viewer fixed
+ Trade Monitor: No longer talks normally when trying to talk in Trade channel
+ Spellcaster: Loads Sio players with spaces within names(need to save a new script)
+ Cavebot: Depot walker fixed
+ Fluid: Drops empty flasks again 
+
+2.6.0, 8.23.2010
+Enhancements:
+ TibiaAuto: Updated to 8.61
+ Grouping: Made more accurate and efficient
+ AutoLooter: stacks items in backpacks that are already full
+Defects:
+ Maphack: Fixed maphack crashing when it's the first module to start
+ AutoGo/Log: fixed hanging when enabling and disabling reponder
+ Show Map: fixed "Research" overwriting ladders and holes when enabled
+
+2.5.2, 21.8.2010
+Enhancements:
+ Tibia Auto: TibiaAuto icon reloads if Explorer crashes
+ Tibia Auto: Can choose to hide Tibia with TA(works with login, and autogo)
+ Cavebot: Walks through players on non-PvP
+ Tibia Auto: Can choose what to do when starting modules after loading a script
+ Tibia Auto: Added new settings in general options and statistics
+ Tibia Auto: Tray icon name changes based on player name
+ AutoLogin: Fixed long delay before logging in
+ AutoLogin: Can automatically use last password and account name
+Defects:
+ TAUtil: Fixed not sending correct index
+ Tibia Auto: Fixed crashing when sending stats
+ TAUtil: fixed getMemRange function
+ Seller: Spam when enabled is now gone
+
+2.5.1, 2.7.2010
+Enhancements:
+Defects:
+ Cavebot: Fixed attacking monsters
+ Modules: Fixed x-ray, fisher, and depot walker
+ PlayerInfo: Fixed "Not detecting spells" bug
+ Kernal/Showmap: Fixed "error messages when editing tiles" bug
+
+2.5.0, 1.7.2010
+Enhancements:
+ Installer: Installer does not change the current items.xml, but it adds a file named "tibiaauto-items-{version number}.xml"
+ Tibia Auto: Updated to Tibia 8.6
+ items.xml: added new items
+ tiles.xml: made all runes a potions stackable and added all new tiles for new areas
+ consts.xml: updated addresses
+ Player Info: Added the ability to disable spell timers
+Defects:
+ Kernal: Fixed bug in MapHacks module causing Tibia to crash/dead creatures to appear in BL
+
+2.4.1, 27.6.2010
+Enhancements
+ Autogo: New "Waypoint Reached" Alarm
+ AutoGo: Restructured alarm types
+ Cavebot: TA Map walk delay after interruptions has been improved
+ Auto Login: Accounts for message of the day
+ Python: Decreased Python function delay to 25ms
+ Python: Extra diagonal walk python functions
+ Python: Added moving variable to characters
+ Cavebot: Walking packets better mimick what the client sends
+ Autogo: waits for 3 seconds after killing something before walking again
+ Autogo: You can edit text in the autogo trigger window instead of having it disappear
+
+Defects
+ Autogo: Several Bugs corrected
+ ShowMap: Saves destination teleporter to xml file properly
+ Python: Fixed writeGotoCoordinates function
+ Cavebot: Hybrid map walker is working again
+ Autogo: Autogo no longer crashes when enabling modules that have not been opened yet with popup windows
+ Cavebot: Don't attack players option get saved
+ Item Config: Fixed adding food items to list
+ Eater: Fixed food eating times in xml file
+ Seller: Fixed memory leak
+ Seller & Banker: Fixed overshooting destination
+ Seller: No longer says "hi" twice in a row
+ Seller: Fixed seller crashing when it tries to buy items
+ AutoGo: Fixed triggers with integer values
+ AutoGo: No longer adds selected modules to start if the start module button is not enabled
+
+2.4.0, 7.5.2010
+Enhancements
+ General update to Tibia 8.57
+
+Defects
+ Auto Go/Log: Corrected a bug in the detection of VIP online status 
+
+2.3.2, 2.5.2010
+Enhancements
+ Auto Go/Log: Typed Item List
+ Auto Go/Log: Additional Icons
+ Kernel: Added support for item typing
+ Load and Save: Saves and starts scripts and modules when loading
+ Load and Save: Option in general settings to load a player's script on startup
+ Kernel: Added support for on-screen text display
+ Restacker: Improved speed of restacker
+ Restacker: Allowed it to pick up less than a full stack if it's too heavy
+ Item Config: Added a couple more items
+
+Defects
+ Auto Go/Log: Corrected a graphical glitch related to using icons in drop-down menus.
+ Python: Fixed setFollowedCreature function
+ Spellcaster: Exori mas casts properly
+ Trade Monitor: Fixed corrupt packet sending after saying long messages
+ Creature Info: No longer fails to read green text when looking at self
+ Cavebot: Is able to go up and down stairs like the ones at the edge of the dock in Yalahar
+ ItemConfig: Correctly identifies CTRL key for Copying, cutting and pasting
+ Tibia Auto: Cleans up more stuff when exiting
+
+2.3.1, 18.4.2010
+Enhancements
+ ItemConfig: Looted items are now saved to script files.  It will always add them to the loot array when loading but it will only select them first one in the tree if it exists.
+ Cavebot: Final version of loot while killing
+ Auto Go/Log: Can walk between start and runaway continuously 
+ Installer: Installation will now never repace the items.xml file unless it is missing
+
+Defects
+ AutoGo: Fixed fighting with banker and seller for control
+ Banker, Seller, Auto Go/Log: Fixed fighting for control when attacking
+ Auto Go/Log: Fixed crash when alarm triggers
+ Auto Go/Log: Now saves blacklist,highlight, detect all floor, detect +-1 floor options
+ Auto Go/Log: Newer conditions like drowning and dazzled are now correctly detected
+ Auto Go/Log: Checks if a logout block is on before trying to log out
+ ItemConfig: Fixed memory leak
+ Cavebot: Fixed crash errors when looting while killing
+ Spellcaster: Exura sio now heals at proper health
+ Python: Fixed memory leak for readContainerItem() function
+
+2.3.0, 13.4.2010
+Enhancments
+ Auto Go/Log: Reworked AutoGo now 4.11
+ Auto Go/Log: Added functionality to capture an image of start and runaway positions.
+ Cavebot: Changed adding and removing waypoint slightly
+
+Defects
+ Auto Go/Log: Stabalized Tibia client window manipulation
+ Auto Go/Log: Corrected and error preventing the logout action from completing successfully
+ Auto Go/Log: Corrected several problems with the spellcasting action
+ Auto Go/Log: Fixed alarm for leveling up
+ Auto Go/Log: Corrected Vista screenshot error
+ Auto Go/Log: Corrected MC Window Confusion error
+ Auto Go/Log: Corrected Window flashing
+ ItemConfig: Cancel button doesn't make any changes now
+ Installer: Added logs folder to TA directory 
+
+2.2.3, 4.8.2010
+Enhancments
+ Auto Go/Log: Reworked AutoGo now 4.11
+ Auto Go/Log: Added functionality to capture an image of start and runaway positions.
+
+Defects
+ Cavebot: Loot from floor works now
+ Python: walkOnTAMap function will now walk to positions 1 square away
+ Spellcaster: Fixed saving timed spells
+
+2.2.2, 4.4.2010
+Enhancments
+ Auto Go/Log:Runaway+Back kills monsters on the way
+
+Defects
+ Cavebot: Fixed toggling between two creatures
+ ItemConfig: Fixed "refresh items from file" button
+ Cavebot: Resets standing timer when cavebot disabled
+ Spellcaster: Freezing when enabling Exura Sio spells
+ Autolooter: Fixed random crashing
+ Cavebot: No longer randomly walks to depot when autogo alarm goes off
+ Cavebot: Fixed fighting with Auto Go/Log when going to runaway point
+ Autolooter: Fixed sometimes closing your own backpacks
+ Cavebot: No more long pauses every ~8 steps when walking
+ Grouper: Groups immediately when enabled
+ 
+
+2.2.1, 28.3.2010
+Defects
+ Spellcaster: Fixed not casting spells
+ Spellcaster: Fixed never casting when cast mana == maximum mana
+
+2.2.0, 27.3.2010
+Enhancments
+ Spellcaster: New and improved spellcaster
+ Item Config: Created Tree Control for items, visit wiki for more information
+ Python: Added entirely new taitem python functions
+ Python: Added MoveUp/Down/Right/Left functions
+ Python: Added other function
+ Python: Removed older taitem python functions(only functions not used in forum python scripts)
+ Tibia Auto: Separated out items and constants into different files
+ Tibia Auto: Installation added new items and consts XMLs and will not need to overwrite future items.xml's
+        REMINDER             to check with Akilez)Auto Go/Log: On logout the cavebot will Half attack, but stay in the same spot until log out
+ Cavebot: Able to choose your own prefix for loading mini map labels (default was $ta)
+ Cavebot: For the trainer, a player must be attacking you to be considered an "Alien"
+ Cavebot: Fixed sometimes not looting creature after killing
+ Autolooter: Improved algorithm for auto open corpses to always loot except when a creature dies while it is moving items
+ 
+Defects
+ Auto Login: Fixed closing backpack after opening them
+ Auto Go/Log: Fixed Logging out command for alarms(it now logs out)
+ Auto Login: Always maximizes window when trying to log in
+ Tiles: Made closed hole very slow so that in case it is actually open but not researched it will avoid it
+ Python: Fixed crash on invalid parameter or module name
+ Python: Fixed error when reading nonexistent item or non-existent character ID
+ Cavebot: Radius now works properly and chooses a random distance to walk to within the radius
+ Cavebot: Fixed high CPU usage created by pathfinding and causing lag
+ Creature Info: Put in safeguard to stop 'looking' at character if it fails
+ RuneMaker: Will only move items from hand into backpacks open for more than 20 seconds.
+ Banker: Fixed Tzelia and added Finarfin locations in the banker.xml
+ Banker & Seller: No longer need to have NPCs in alphabetical order
+ Trade Monitor: No longer crashes when trading
+
+2.1.2, 9.11.2009
+Enhancments
+ Updated to 8.54
+ Items.xml: Added new STACKABLE items to loot section(unnamed, but should still be useful)
+ Cavebot: Added see-saw waypoint walker option that goes through them forward then backward
+ Showmap: Made depots permenent map features that don't disappear when extended research is enabled.
+
+Defects
+ Cavebot: Fixed depot walker staying 1 square away from depot
+ Cavebot: Made trainer have minimum delay before switching weapons
+ Cavebot: Type of map used saves properly
+ Auto Go/Log: Fixed spamming of logout command when battle sign is on
+ Maphacks: For Reveal Fish Tiles, if you don't move it will still refresh after 1.5 seconds
+ Cavebot: Fixed constantly toggling attacks between two creatures, one on the attack list, one not on the list
+ Cavebot: Loot tried to be placed into full backpacks before being placed into spacious backpacks
+ Statistics: Kept creating extraneous module statistics files even though it never sent them
+ Python: Fixed TA crash when reloading a script
+ Python: Fixed problem preventing StandDiagonal and other scripts that move the player from working
+ Auto Go/Log: Corrected stamina alarm memory address
+ Cavebot: Fixed cavebot standing 1 sqm away from depot on "TA Map" option
+ Cavebot: Fixed not opening creatures when there was an item underneath
+ Cavebot: Fixed not opening creatures underneath arches
+
+2.1.1, 9.11.2009
+Enhancments
+ Runemaker: Added ability for enchanted spears
+ Cavebot: A tile marked as "depot" or "closed hole" will now not require a specific item to be a closed hole or depot box
+(you can set a bag as a depot and desert sand as a closed hole)
+Since it doesn't know which item is actually the hole or depot it will use the lowest item in a pile
+ Cavebot: Uncovers blocked level changes
+
+Defects
+ items.xml: Fixed addresses used for attack mode and follow mode
+ tiles.xml: Fixed the mislabeled goUp and goDown tags on certain stairs/holes and added more holes/stairs to the file
+ Spellcaster: The "cast when mana above" is no longer disabled by the "summon control"
+ Cavebot: Fixed the way it sets the Tibia attack mode and follow mode
+ Cavebot: Sometimes would randomly stop following creatures if the follow button was not pressed
+ Runemaker: Fixed accidentally moving weapon to arrow slot when not using arrow slot
+ Cavebot: Would not loot from creatures underneath archways and doors
+ Restacker: Made it comform to sending real tibia packets
+
+2.1.0, 6.11.2009
+Enhancments
+ Updated for 8.53
+Defects
+
+2.0.3, 21.10.2009
+Enhancments
+ ItemConfig: Fixed a bug that prevented users from deleting certain items from their loot list
+ Statistics: Can upload info on how you play Tibia to TA.net to help make TA undetectable
+ Installer: Added information on uploading stats to inform users of the new option
+ SpellCaster: Finally fixed the spam casting "exana pox" bug when poisoned
+ Cavebot: Reworked the cavebot's waypoint walking to include the best features form both map methods
+ Eater: No longer eats while in a PZ
+ Eater: Attempts to eat items with smaller quantities in other backpacks, freeing space.
+ Cavebot: Fixed the high CPU usage of the walker and simplified the algorithm
+ Cavebot: Added a radius your player will randomly walk within when going to a waypoint.
+Defects
+ TibiaAuto: Made debug and stats files always save to same directory
+ Cavebot: Stopped the Map Debug info from slowing down walking algorithm
+ Cavebot: FINALLY found a fix for the old error where Tibia freezes completely and prevents you from doing anything and clicking anywhere and attacking anything.(This may still happen though if your screen turns off... still looking into it)
+ Cavebot: Stops tryng to open snakes and fire elementals
+ Cavebot: Fixed erratic status messages
+ ShowMap: Added pitfalls as holes
+
+2.0.2, 12.10.2009
+Enhancments
+ ItemConfig: Alphabetized the lists for ease of use
+Defects
+ Kernel: Fixed the character selection
+ ItemConfig: Fixed the Add, edit and delete functions
+
+2.0.1, 03.10.2009
+Defects
+ All: Fixed crash bug from change in the way Tibia.exe runs
+ Fisher: Fixed
+ TibiaAuto: Fixed memory leak when reading in name string from memory
+
+2.0.0, 02.10.2009
+Enhancments
+ Gereral upgrade to Tibia 8.52
+ Kernal: fixed an error destroying .skin files when they were loaded and set.
+ Item Config: fixed loot list Items not being displayed
+ Kernal: Provided for more depressed-looking buttons
+ Kernal: added primary skinning ability for dialogs - color schemes
+ Fluid Drinker: improved drinking speed when backpacks closed
+ Cavebot: decreased walking pause after eating/casting spell
+ Python: added 4 minimap reading/writing functions
+ Show Map: improved map refresh rate(now it should NEVER miss any squares by walking too fast)
+ Map Hacks: allowed for ALL mini map levels to be researched at the same time within Tibia
+ Show Map: added functionality for teleports as well as permanently blocked squares
+ Cavebot: Will find 'fastest' path based on tile speeds rather than just shortest
+ Tiles.xml: Added many different tile attributes, made damaging fields have a long speed so they get avoided when possible
+ Python Scripts: Increased maximum parameter text length from 128 to 1024
+ Cavebot: Will retreive less items if they are too heavy(ie. 50 spears)
+ Cavebot: Will eat more food from corpses
+ Spellcaster: Added some default spells to list
+ Cavebot & Auto go/log: Can manually edit the x,y,z coordinates before adding to list
+ Banker: Added 4 new bankers
+ Banker: Banker will stop by bank then will restock and deposit at depot to save time (but cavebot will not stop by bank after going to the depot so still add )
+ Installer: Looks for tibia client install location in registry
+
+Defects
+ Cavebot: Fixed one of the crash bugs in the cavebot(when not looting creature and going back to hunt)
+ Spellcaster: Fixed the saving of the Exori Mas setting
+ Auto Go/Log:Fixed "Reached Runaway" option
+ Fluid Drinker: Added safety to not drink when at max hp or mana
+ Ammo Restacker: Fixed saving Restack to Right Hand option
+ Cavebot: Fixed walking bug when it continually goes up and down levels in a loop
+ Cavebot: Fixed crashing when debug enabled and cavebot cannot find a path to destination
+ Cavebot: Sped up wakling algorithm (has been unnoticeably broken ever since last time it was improved)
+ Cavebot: Fixed retreiving items from main depot container
+ Cavebot: Fixed resuming attack on distance creatures
+ %ta : No longer accidentally sends words beginning with %ta in private chat and NPC channel(will still show up,but won't be sent)
+ All Over: Fixed more than 30 memory leaks just sitting around waiting to crash TA
+ Runemaker: fixed issue with suddenly stopping after a couple hours
+
+1.20.2, 24.07.2009
+Enhancments
+ Cavebot: Allowed for quick upload of statistics files from cavebot dialog(also increased size for prompt)
+ Character Info: Significant memory leak fixed :)
+ Spellcaster: Fixed not casting against certain creatures after letter 'S'
+
+Defects
+ Cavebot: Removed popup when pausing and unpausing cavebot
+ Cavebot: Completely fixed loot from floor
+ Cavebot: Fixed crash on "drop items instead of depositing" option
+ Food Eater: Added back eating times to the items.xml file
+ Auto Go/Log:Fixed the saving of the whitelist to a config file(all new saved whitelists will load correctly)
+ (Unfortunately the way it saved before created an unreadable structure, if you are set on keeping an older script with a whitelist, delete text within the file between "<  >" braces with "whiteList" and "mkBlack" in them while keeping the braces balanced)
+
+1.20.1, 07.07.2009
+Enhancments
+ None
+
+Defects
+ Cavebot: Fixed fatal crash bug when using "loot from floor"
+ Cavebot: Fixed looting creatures when carried bag is container 2
+ Cavebot: Fixed depot walker depositing when more than 1 bag open
+ Cavebot: Fixed depot walker freeze when only 1 square away
+ Python: Fixed itemOnTopIndex(x,y,z) function;
+
+1.20.0, 06.07.2009
+Enhancments
+ Python: Added new function 'follow' to methods and added more 'Use With' functions for carving ice cubes
+ Python: Added more new functions
+ Python: Updated some packet sender functions
+ Creatures: Updated the creature list with new HP/weaknesses
+ Tiles.xml: updated new tiles for 8.5
+ Autogo: VIP alarm, skull alarm and stamina alarm
+ Fluid Drinker: Allow use without open backpacks(will keep trying to heal if run out of items)
+ 
+Defects
+ Autogo: Fixed constant crash bug, this should not crash anymore
+ Autogo: no large debug file anymore
+ Tiles.xml: fixed lexical error within file
+
+1.19.8, 24.04.2009
+Enhancments
+ AutoGo: Sounds no longer play on top of eachother, they wait for one to finish.
+ Runemaker: Added random mana option when runemaking
+ Fluid Drinker: Added randomized option
+ Fluid Drinker: Added extra potions
+ Trade monitor: lists a summary of all unknown items in a trade window as well...http://www.tibiaauto.net/wiki/index.php/Trade_Monitor
+Defects
+ Spellcaster: Fixed not healing with 10% variance checked
+ Cavebot: Fixed killing ignored creatures
+ Fluid Drinker: fixed bug in fluid drinker
+ Cavebot: fixed walking shift by 1 square bug
+
+1.19.7, 24.03.2009
+Enhancments:
+ Auto Login: Added a time delay before logging in again
+ Auto Login: Minimizes all backpacks upon opening
+ SpellCaster: 
+ Cavebot: Improved walking algorithm for going up and down
+Defects:
+ Auto Login: Fixed opening container bug
+ Cavebot: fixed diagonal walking issue
+ Cavebot: fixed needless wall hugging
+ Cavebot: fixed walking shift by 1 square bug
+ Cavebot: skips to next if no path found or stuck
+ Cavebot: fixed waypoint GUI selection(if no point highlighted starts at beginning instead of stalls)
+ Cavebot: fixed long pause when changing floors
+ Cavebot: improved attack priority for distant creatures if they have a higher priority
+ Grouping: Fixed needless groupings
+ TA Map: Added newer tiles and updated older ones for exteded map research
+ AutoGo: Added a blacklist to allow for alarming only when certain creatures come into view
+ AutoGo: Added alarm for +/- 1 floor only
+
+ps Van:  I changed the meaning of AlwaysOnTop and moreAlwaysOnTop. new(AlwaysOnTop==1) = old(AlwaysOnTop || moreAlwaysOnTop) 
+and moreAlwaysOnTop is 1,2 or 3 depending on the optbyte for the tile
+
+1.19.5, 16.12.2008
+Defects:
+ Trademon: fixed sending to trade channel
+ Trademon: fixed crash bug when sleep < 10s
+ Cavebot: fixed missing some monsters for attack
+
+1.19.4, 16.12.2008
+Defects:
+ General: fixed several memory leaks, crash bugs and small defects
+
+1.19.3, 14.12.2008
+Defects:
+ Cavebot: fixed problem of TA attacking everything
+ Cavebot: fixed on crash bug and one memleak
+
+1.19.2, 11.12.2008
+Enhancements:
+ General: updated to Tibia 8.40
+
+1.19.1, 03.12.2008
+Defects:
+ X-Ray: fixed pgup/pgdown hotkeys
+ General: fixed rare crash bug connected to hotkeys
+
+1.19.0, 01.12.2008
+Enhancments:
+ Food Eater: Uses new "digest" time to determine time between meals.
+ Item Config: Added an additional parameter to the items in the food Item list, "digest" time.
+ Item Config: Added features to Add, edit or delete items without directly editing the .xml file
+ Show map: Couple added bitmaps for your viewing pleasure.
+ Cavebot: Cavebot starts from the selected waypoint OR begins from previous waypoint if none selected.
+ Cavebot: Improved looting speed and accuracy.
+ Cavebot: Added Don't Attack Players option that will guarantee the bot won't attack a person
+ Cavebot: Added keyboard hotkey for pausing cavebot (can also use %ta pause if you like).
+ Cavebot: Training - Can select a different fighting mode to use with training weapon.
+ Cavebot: Training - Added train with right hand option for better interraction with RuneMaker module.
+ Cavebot: Training - Reorganized GUI for more intuitive grouping.
+ AutoGo: Ignores all spells no matter how obscurely made
+ Python: Able to read in VIP list through reader.readVIPEntry(int nr)
+
+Defects:
+ Kernel: Fixed Crash when Pasting text into window.
+ UH Cast: Improved Communication with AutoAim module
+ Auto Aim: Fixed rune spam bug, so UH will still fire.
+ Banker: Fixed 'Cash on Hand' not saving to config files.
+ Cavebot: Fixed loot from floor algorithim.
+ Cavebot: Fixed bug with selecting waypoints at random.
+ Cavebot: Fixed backattack alien with runes
+ X-Ray: Fixed incorrect xray addresses.
+
+
+1.18.4, 16.10.2008
+Enhancements:
+ Banker: Adding a feature to retrieve cash to remain onhand.
+ Banker: Added capability to save and load configurations.
+ Kernel: Added const codes to work with new banker mod.
+ Kernal: Included an updated tibiaauto-tiles.xml
+
+Defects: 
+ Seller: Included Seller module files in installer.
+
+1.18.3, 15.08.2008
+Enhancments:
+ Seller: added module
+ Cavebot: Added pause functions
+
+Defects:
+ Kernel: Fixed addrBackpack and addrWhiteMessage
+ Kernel: Fixed packet for npcBuy and npcSell functions
+
+
+1.18.2, 16.08.2008:
+Defects:
+ General: fixed crash bug when too long line (128 chars) appeared, hotkeys defined, quests viewed
+ Banker: fixed minor bugs in banker and spellcaster
+
+1.18.1, 16.08.2008:
+Defects:
+ General: fixed packaging issue with the tibiaauto_util.dll
+
+1.18.0, 15.08.2008
+Enhancments:
+ General: updated to tibia client 8.22
+ Added sorter module.
+ Added banker module.
+ Updated Tibia client with buttons for new modules.
+ Added new functions to detect change in items inside a bag if there was a item added to a stack.
+ Cavebot: Improved training weapon switcher to always have a weapon in hand.
+
+Defects:
+ Cavebot: Fixed timing of Suspend After Unreachable.
+ Items: Fixed Femur Hill walls and some ramps and ladders in the tiles.xml
+ Creature Info: Fixed bug with weakness,strength,immunity,noeffect tags to display for creatures
+ Auto Go: Fixed ring for private messages.
+
+1.17.6, 13.07.2008
+Defects:
+ Cavebot: Freezing after random period of time fixed.
+ Autolooter: Fixed bug causing "Sorry Not Possible" when opening corpses
+ General: various fixed after Tibia 8.21 update
+
+Enhancemens:
+ Creature Info: Updated creature database to Tibia 8.2
+ Creature Info: Added availability of <weakness>,<strength>,<immunity>,<noeffect> tags to display for creatures
+ General: added protection against using TA on incorrect Tibia version
+
+1.17.5, 09.07.2008
+Enhancemens:
+ General: update to Tibia 8.21
+
+1.17.3, 08.07.2008
+Defects:
+ General: various fixes to Tibia 8.20
+
+1.17.2, 07.07.2008
+Defects:
+ General: various fixes to Tibia 8.20
+
+1.17.1, 06.07.2008
+Enhancements:
+ General: updated to Tibia 8.20
+
+
+1.17.0, 22.06.2008
+Defects:
+ Cave bot: Fixed 'loots only into first backpack' bug
+ Cave bot: Fixed 'no auto-follow" bug
+ Auto fish: fixed config loading error
+ Cave bot: reduced the old "graphical glitch"
+ cave bot: reduced server spamming by 'attack' command
+ XRay: Removed excessive limitations on viewing levels
+ Python scripting: fixed a major memory leak
+ General: fixed several tile information
+ Cave bot: waypoint is assumed to be reached when standing 1 tile from it
+ Cave bot: fixed memory leak
+
+Enhancements:
+ Spellcaster: complete rewrite of the tool with several bugfixes and new features
+ Fisher: Option to stop fishing when no worms
+ Auto loot: improved speed of looting
+ Cave bot: improved speed of looting
+ Grouping: Improved algorithm for grouping
+ General: improved uninstallation procedure
+
+1.16.2, 10.04.2008
+Defects:
+ General: removed crash bug which appeared after upgrading to tibia client 8.11
+
+1.16.1, 09.04.2008
+Enhancements:
+ General: updated to Tibia Client 8.11
+
+1.16.0, 08.02.2008
+Defects:
+ General: fixed potential crash bug when spammed with many big messages
+ Cave bot: fixed going up with a ladder in new areas
+ Show map: at least one ground=1 required now on a tile for it to be avaialble
+ Tiles: fixed some Darashian tiles
+ Auto loot: small fix in speed of looter
+ Cave bot: small fix in speed of looter
+
+Enhancements:
+ Fluid drinker: redesigned fluid drinker to fully work with the new potions
+ XRay: added module XRay
+ 
+
+1.15.2, 15.12.2007
+Defects:
+ Fluid drinker: added support for the new fluids
+ Tiles: fixed tile 7522
+
+1.15.1, 12.12.2007
+Enhancements:
+ General: updated to Tibia Client 8.1
+
+1.15.0, 26.06.2007
+Enhancements:
+ General: updated to Tibia client 8.00
+ Cave bot: improved performance of walking and looting
+ General: improved performance of all kernel functions
+
+Defects:
+ Cave bot: fixed incompatibility between killing priority and creature info
+
+1.14.1, 04.06.2007
+Defects:
+ Cave bot: fixed creature selection algorithm (bug since 1.13.2)
+ Cave bot: fixed creature killing priority
+ Cave bot: fixed stick to monster
+ Cave bot: improved loot from floor performance
+ Auto go/log: fixed ignore spells
+ Auto go/log: fixed white list support
+ General: fixed memory leak in kernel
+ General: fixed calculating of quantity of runes
+
+Small enhancements: 
+ Cave bot: looter will not open corpse if no looting needed at all
+ 
+
+1.14.0, 29.04.2007
+Defects:
+ Auto attack: fixed depot walker to take < cap instead of <=
+
+Enhancements:
+ * Auto go/log: added many many new alarms
+ * Auto go/log: added actions for runaway + half/full cavebot suspend and runaway + back
+ * Auto go/log: added force full recovery after hp/mana fall below boundary
+ * Ammo restack: pickup throwable takes all objects instead of only one
+ * Ammo restack: pickup throwable picks up also from under the player
+ * Ammo restack: pickup throwable can now pickup every X seconds instead of immediately 
+ * Ammo restack: when capacity below limit then pickup throwable is distabled
+ * General: added usage statistics
+
+1.13.4: 15.04.2007:
+Defects:
+ Auto attack: fixed rare "TA attacking players" bug
+ Auto login: fixed login sequence when extra popups appear
+
+1.13.3: 08.04.2007:
+Defects:
+ * General: fixed a small code checking bug
+
+1.13.2: 05.04.2007
+Enhancements:
+ * Auto attack: added creature killing priority
+ * General: TA now minimizes to tray
+
+1.13.1: 31.03.2007
+Enhancements:
+ * Auto attack: extended depot walker by capacity check
+ * Auto attack: extended depot walker by refitting items from depot
+ * Ammo restack: added possibility to restack any stackable item
+
+Defects:
+ * Auto login: fixed problems when multiple TA instances trying to login simultanously
+ * Auto login: fixed backpack opening
+ * Auto aim: cleaned up obsolete features
+
+1.13.0: 25.03.2007
+Defects:
+ * General: fixed rare crash/spin bug
+
+Small enhancements:
+ * General: optimized size of the main TA window
+
+Enhancements:
+ * Auto login: added auto login module for continous cavebotting
+
+1.12.7: 17.03.2007:
+Small enhancements:
+ * Auto go/log: detect CM as GM
+
+1.12.6: 03.03.2007
+Defects:
+ * Show map: fixed problem preventing more than 3 TA instances to run at once
+ * Tile database: small fixed for venore stairs in tile database
+
+Small enhancements:
+ * Cave bot: walking algorithm has been rewritten from scratch
+
+1.12.5: 24.02.2007
+Defects:
+ * Cave bot: attack and follow mode is not restored after cave bot stop
+ * Cave bot: fixed loot from floor logic so that it loots correctly now
+ * Cave bot: fixed avoiding blocked ladders, rope spots and sewer entries
+ * General: lowered memory consumption (cut by over a half)
+
+1.12.4, 04.02.2007:
+Small enhancements:
+ * General: introduced area for ads
+
+1.12.3, 21.01.2007
+Small enhancements:
+ * Creature info: updated creature statistics database
+ * Temporarily disabled upload of maps
+
+Defects:
+ * Python Scripting: fixed rare crash bug during startup
+ * Auto responder: ignore player might have not ignored sometimes immediatelly
+
+1.12.1, 09.01.2007
+ * General: updated to tibia client 7.92
+
+1.12.0, 08.01.2007
+ * Creature info: added detection of dangerous monsters in the area
+  
+  Ever scared of entering an yet unexplored area? No need to worry further. Participate
+  in building Tibia respawn map. Then use <crstatMostHp> <crstatMostExp> tags in your
+  creature info to have TA warn you about dangerous monsters nearby.
+
+ * Cave bot: attacking alien enemy if any running TA instance is attacked (combo defence)
+ 
+  No more fear of eliminating your afk training party one by one. Now all running Tibia Autos
+  will instantly attack an unknown enemy attacking any of them.
+
+ * Loot stats: automatic sending of statistics after clicking a button
+ 
+  To improve quality of loot statistics we have decided to add a special option to send
+  the statistics automatically by a click of a button. Look it up in the main TA window
+  and share your loot statistics with us.
+
+ * Creature info: customization of tibia window caption
+ 
+  Ever had problem with distinguishing running Tibia windows? This problem is no more!
+ 
+ * General: added possibility to send registered tibia maps that will build tibia world map
+ 
+  As we have launched map.tibiaauto.net, we need a fresh data to build the maps. If you have
+  some new precious area explored do send your maps to us (by a click of a button!).
+
+ * General: added gathering respawn statistics
+ 
+  To enhance map.tibiaauto.net by adding a respawn locations and also to build detection of
+  nearby new monsters, we have added a possibility to collect creature statistics. Sending
+  them to us is of course by a click of a button!
+
+Defects:
+ * General: removed 'buy premium access' dialog on startup
+ * Auto log/go: fixed bug in distinguishing players and monsters
+ * Creature info: fixed rare crash bug
+ * General: tiny fix in tiles.xml after tibia.dat update
+ * Creature info: added tag <name>
+ * Creature info: fixed saving activity status of info sections
+ * Creature info: updated creature list after 7.9 game update
+
+1.11.2, 15.12.2006
+ * General: updated tiles definition to Tibia 7.9
+ * General: fixed small bug with install path and python scripts
+
+1.11.1, 12.11.2006
+ * Python scripting: added callback handling of %ta messages
+ * General: upgraded to Tibia 7.9
+
+1.11.0, 25.10.2006
+ * Ammo restack: added picking up throwable directly to hand
+ * Auto log/go: fixed battle list alarm detection
+ * Python scripting: fixed bugs in a few functions
+ * Fluid drinker: empty vials are now dropper from all containers
+ * Fluid drinker: fixed crash bug when droping empty vials
+ * Auto fish: added possibility to define minimum fishing capacity
+ * Auto log/go: fixed "move" trigger with "runaway" action
+ * Cave bot: maximum number of waypoints increased from 50 to 500
+ * Cave bot: added loading waypoints from minimap
+ * Auto log/go: rewritten auto log/go to clean detection bugs
+
+1.10.5, 08.10.2006
+ * Auto go/log: added multifloor paranoia
+ * General: fixed max mana/max mlvl bug
+ * General: added TA installer
+ * Cave bot: fixed opening hole bug again
+ * Kernel: improved item lookup in backpacks
+ * Cave bot: improved cavebot looting
+ * Cave bot: improved cavebot walking when target tile is busy by other creature
+ * Python scripting: added 'takernel' package
+
+1.10.4, 30.08.2006
+ * Kernel: small fix in 'tm' address
+
+1.10.3, 29.08.2006
+ * Kernel: adaptation to tibia client 7.81
+
+1.10.2, 27.08.2006
+ * Kernel: generated new tibiaauto-tiles.xml for the 7.8 client
+ * Cave bot/auto looter: fixed looting from dieing creatures
+ * Light: fixed geting/setting light color/power
+ * Fluid drinker: now drinks fluids again
+ * Rune maker: added saving item to backpack
+
+1.10.1, 04.08.2006
+ * General: fixed various bugs introduced by 7.8 release
+ * Cave bot: fixed opening holes bug
+ * Cave bot: fixed tile entry for tile 1960
+
+1.10.0, 03.08.2006
+ * TA Scripting: introduced TA scripting
+ * General: various small bugfixes
+ * Kernel: improved code entering a little bit
+ * All: adaptation to tibia client 7.8
+
+1.9.5, 22.05.2006
+ * Kernel: changed runtime id generator to be more deterministic
+
+1.9.4, 21.05.2006
+ * All: adaptation to tibia client 7.7
+
+1.9.1, 04.05.2006
+ * Cave bot: fixed major bug causing TA to attack innocent creatures [vanitas]
+
+1.9.0, 29.04.2006
+ * Auto fisher: fishing rod can now be in any container [vanitas]
+ * Cave bot: added knight training support options [vanitas]
+ * Cave bot: fixed matching monster names with prefix [vanitas]
+ * Cave bot: fixed saving loot/food param [vanitas]
+ * Player info: fixed (again) 100-% problem [vanitas]
+ * Cave bot: added dropping not looted items to floor [vanitas]
+ * Cave bot: added looting item from floor [vanitas]
+ * Cave bot: added attacking only creatures which has hp below some % level [vanitas]
+ * Light: added configuration of the module [T4ndeta]
+ * Kernel: fixed top item detection on some tiles [vanitas]
+ * Anti logout: added anti-logout module [vanitas]
+ * Cave bot: added ignore list of monster [vanitas]
+ * Cave bot: added casting runes against attacking alien creatures [vanitas]
+ * Spell caster: added summon control [vanitas]
+ * Spell caster: more configuration [T4ndeta]
+ * PlayerInfo: rewriten for module comunication [T4ndeta]
+ * CreatureInfo: added info from PlayerInfo module and some improvements [T4ndeta]
+ * CreatureInfo: added NameChanger [T4ndeta]
+ * CreatureInfo: added KnownCreature info, where you can browse known players/creatures [T4ndeta]
+ * CreatureInfo: posibility to show information of players on all levels [T4ndeta]
+ * FPS: added fps changer [T4ndeta]
+ * Auto go/log: implemented suspend macro function [T4ndeta]
+ * Kernel: significantly improved performance of all modules [vanitas]
+ * General: hotkeys are now supported on 'tell' and 'channel' [vanitas]
+ * Ammo restack: one can now choose to restack to right hand [vanitas]
+ * Rune maker: added saving rune variants [whiterlaces]
+ * TradeTool: added TradeTalker [T4ndeta]
+ * MapHack: changed NonFish fields to change to lava [T4ndeta]
+ * General: numerous bugfixes [all]
+
+1.8.2, 12.02.2006
+ * General: fixed packaging (1.8.1 had tibiaautoinject.dll in wrong place) [vanitas]
+ * Cave bot: fixed random tibia assertion bug when using Tibia Client map [vanitas]
+ * Player info: fixed 100-% problem with fist/mlvl display [T4ndeta]
+
+1.8.1, 08.03.2006
+ * Auto go/log: fixed minor problems with detection/reactions [T4ndeta]
+ * Cave bot: fixed problem with walking to depot when the depot is blocked [vanitas]
+ * Creature info: added brilliant configuration and much extended the module [T4ndeta]
+
+1.8.0, 06.03.2006
+ * Spell caster: possibility to define a separate spell for below hp/above mana [T4ndeta]
+ * Auto go/log: added tons of new alarms [T4ndeta]
+ * Auto aim: added GFB, LMM, Soulfire to auto fire [T4ndeta]
+ * Cave bot: fixed bug in calculating current distance to monster [vanitas]
+ * Cave bot: fixed bug in opening corpses for looter [vanitas]
+ * Cave bot: forced gathering statistics [vanitas]
+ * Auto looter: added automatic opening killed monsters and gathering stats [vanitas]
+ * Cave bot: changed send stats boundary from 200k to 400k [vanitas]
+ * Cave bot: added diagonal walking and improved multifloor walking [vanitas]
+ * Auto go/log: added multifloor walking [vanitas]
+ * Kernel: addresses and object IDs have been moved to tibiaauto-item.xml [vanitas]
+ * Rune maker: fixed rune time counting [T4ndeta]
+ * Rune maker: added mana limit [T4ndeta]
+ * Rune maker: added use mana to maximum feature [T4ndeta]
+ * Creature info: added rook players support [T4ndeta]
+ * Creature info: fixed problem with non-player creatures (should also fix problem with no showing info messages) [T4ndeta]
+ * Creature info: added showing hp of monsters [T4ndeta]
+ * Kernel: improved map operations performance [vanitas]
+ * Cave bot: added "go to depot" feature [vanitas]
+ * Auto UH: changed loop delay from 50ms to 200ms [vanitas]
+ * Rune maker: fixed a bug when detecting open containers [vanitas]
+ * Player info: remaining time is now shown in 'Xh Ymin' format [vanitas]
+ * Map hacks: fixed rare crash bug when fast walking with many monsters [vanitas]
+ * Cave bot: added aggressive debuging possibility [vanitas]
+ * Cave bot: fixed cavebot suspend bug after unreachable due to standing [vanitas]
+ * Player info: displays time remaining for certain spells, also 20sec and 5 sec warnings [whiterlaces]
+ * Cave bot: fixed "strange grahpical inteference" problem which appeared rarely [vanitas]
+ * Player info: added fist skill and magic level [T4ndeta]
+
+
+1.7.6, 08.01.2006
+ * Cave bot: fixed eat from corpse when no cap
+ * Cave bot: fixed sharing violation when gather statistics enabled
+ * Auto go/log: changed check delay from 500ms to 200ms
+
+1.7.5, 03.01.2006
+ * General: removed memory leak in regular expression parsing
+
+1.7.4, 03.01.2006
+ * Cave bot: added "stick to monster" option
+ * Cave bot: added "eat from corpse" option
+ * Cave bot: added "consider monsters in range" option
+ * Cave bot: added "attack only monsters attacking you" option
+ * Cave bot: added "force monster attack when attacked" option
+ * Cave bot: added "unreachable after" and "suspend after unreachable" options
+ * Cave bot: added option to stand in place after reaching a waypoint
+ * General: changed 'donation' alert to it pops up automatically when started
+ * Ammo restack: improved moving of countable items (gp, etc.)
+ * Auto responder: fixed it (changed to the hook technology) so it does not miss messages anymore
+ * Creature info: created the module
+ * Monster show: enhanced monster show interface [whiterlaces]
+ * Auto UH: fixed default config for UH borderline bug
+ * Auto grouping: fixed unwanted grouping of mana fluids
+ * Auto aim: rewritten from scratch to improve performance (now is a proxy-type)
+ * Auto aim: added aiming against players directly from the battle list
+ * General: new TA icon [wateva]
+ * Ammo restack: fixed pickup throwable from under the blood
+ * Map hacks: created module with two features: reveal fish and reveal creature names
+ * Auto fish: moved reveal fish to the map hacks module
+ * Cave bot: corpse ids are no longer needed
+ * Cave bot: added gathering loot statistics
+ * Auto aim: added auto fire feature [T4ndeta]
+
+1.7.3, 17.12.2005
+ * General: fixed one more bug in map reading
+ * Ammo restack: added moving items covering spears
+ * Ammo restack: added small stones pickup
+
+1.7.2, 17.12.2005
+ * General: fixed reading map (auto fisher and show map was broken due to this bug)
+ * General: when loading config a nice window now appears
+
+1.7.1, 17.12.2005
+ * Auto aim: fixed aiming against human bug
+ * Auto fisher: added 'nofish water' feature
+ * Auto fisher: made it fish smartly only in a wishy fields
+ * Auto fisher: redesigned after 7.6 change in water tile definitions
+ * Rune maker: corrected handling of 'no more blanks' situation
+ * Show map: Added displaying of tile id
+
+1.7.0, 14.12.2005
+ * Auto responder: added A.L.I.C.E to talk automatically. Credits to http://j-alice.sourceforge.net/ from which
+   the whole engine is taken.
+ * Auto responder: all string matches are now done using regexp (http://laurikari.net/tre/syntax.html)
+ * General: created 'xml' config file and started migration to it
+ * General: changed memory management a little bit
+ * General: migrated modules to stand-alone dlls (playerinfo, uh, grouping, restack, fluid, aim, 
+   fisher, spellcaster, trademon, memdebug, showmap, monstershow, itemconfig, cavebot, runemaker, food eater)
+ * Show map: improved a little bit interface for managing map
+ * General: update to client version 7.6
+
+1.6.0, 27.11.2005
+ * Auto responder: created new tool
+ * Auto looter: created new tool
+ * Fixed tons of bugs
+ * Started work on modularisation and sdk to prepare TA for open source
+
+1.5.6.3, 18.11.2005
+ * Auto go: fixed going up using rope
+ * Auto aim: fixed aiming against people
+ * Auto loot: fixed looting in bags
+
+1.5.6.2, 17.11.2005
+ * Rune maker: fixed crash bug when incorrect params provided
+ * Light hack: fixed light hack not working when no light source used (new "feature" of tibia 7.55)
+ * Auto inject: fixed inject so it works now
+
+1.5.6.1, 16.11.2005
+ * General: support for tibia client 7.55
+
+1.5.6, 14.10.2005
+ * Rune maker: extended mana points to cast rune to 2000
+ * Auto attack: fixed another 'monster unreachable' bug
+ * Auto attack: fixed attack bug when using tibia client map
+
+1.5.5, 12.10.2005
+ * [Wateva] Docs: create first really good manual for TA.
+
+1.5.4, 11.10.2005
+ * Auto attacK: fixed bug with unreachable monster detection
+
+1.5.3, 10.10.2005
+ * Auto attacK: fixed again bugs incorrectly fixed in 1.5.2
+
+1.5.2, 10.10.2005
+ * Auto attack: fixed sorting waypoints list bug
+ * Auto attack: fixed moving to next waypoint when formerly attacking monster 
+ * Auto attack: fixed showing walker status (no more go to [0,0,0])
+
+1.5.1, 09.10.2005
+ * Auto UH: fixed self UH bug (could eat up whole BP of UH when not needed)
+
+1.5.0 (beta), 08.10.2005
+ * Fluid drinker: added droping empty flasks
+ * Ammo restack: added support for small stones
+ * Auto attack: added support for using tibia internal map
+ * Auto attack: added support for going up using rope, lader, stairs
+ * Auto attack: added solution for not-attacking unreachable monsters
+ * Auto attack: added looting custom iteam
+ * Auto attack: added looting from inner bags
+ * Auto attack: added round-robin waypoint selection algorithm
+ * Auto attack: added configuartion of loot capacity limit (was fixed to 50)
+
+1.4.1 (beta), 05.10.2005
+ * Item config: fixed major bug which caused random crashes in various modules
+
+1.4.0 (beta), 30.09.2005
+ * Auto attack: added looting worms.
+ * Auto attack: don't suspend when enemy creature enters screen.
+ * Auto go: added reaction on attack sign.
+ * Inject MC: added MC support injection into tibia.exe client.
+ * Auto food eater: added grapes.
+ * Fluid drinker: added hotkey to drink fluids.
+ * Auto UH: added hotkey to self UH.
+ * Auto UH: added selection of rune type.
+ * Auto UH: added group UH protection.
+ * Item config: added possibility to choose eaten food types.
+ * Ammo restack: added automatical restacking of ammo/throwable.
+ * Auto AIM: added aiming against creatures.
+ * Light hack: added possibility to switch it off.
+
+
+1.3.1, 24.09.2005
+ * Rune maker: fixed bug that caused module to not work at all.
+
+1.3.0, 24.09.2005
+ * Food eater: Added eating brown mushrooms, white mushrooms
+ * Rune maker: Added making two runes at once
+ * Rune maker: Added moving weapon to the arrow slot for rune casting
+ * Auto looter: Added corpses of spiders, ghouls, skeleton, dwarf
+ * Fluid drinker: Created tool
+ * Auto attack: Added attack mode selection.
+ * Auto go: Fixed bug with auto go to runaway.
+ * Auto fish: Reveal water fields with no fish.
+ * Trade monitor: Created tool
+ * Monster show: Added slime revealer
+
+1.2.4, 02.09.2005
+ * Fixed looting gp
+ * Added support for soul points
+ * Added 'state' information to auto attack (easier cave bot user troubleshooting)
+
+1.2.3, 01.09.2005
+ * Fixed communication bug which prevented bot from working well
+ * Added gold looting in cave bot
+
+1.2.1, 30.08.2005
+ * Fixed bug in auto aim tool
+
+1.2.0, 30.08.2005
+ * Improved user interface
+ * Added MC and reconnecting support
+
+1.1.1, 30.08.2005
+ * Added corpses to loot: rat, rotworm, goblin
+ * Added auto aim of SD and explo
+Thanks to Dashin, k666k and Rikkert for support for object ids!
+
+1.1.0, 29.08.2005
+ * Added 'auto aim' tool
+ * Changed (lowered) permissions needed to run tibia auto
+ * Improved info.txt
+
+1.0.0, 28.08.2005
+ * Initial version

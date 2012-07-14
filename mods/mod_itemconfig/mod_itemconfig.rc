@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mod_itemconfig.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TOOL_ITEMCONFIG DIALOGEX 0, 0, 266, 330
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tool: item config"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Food types",IDC_FRAME_FOOD,7,7,252,69
+    GROUPBOX        "Items",IDC_FRAME_ITEMS,7,79,252,206
+    LISTBOX         IDC_TOOL_ITEMCONFIG_FOODLIST,16,20,180,49,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Refresh item definitions from disk",
+                    IDC_TOOL_ITEMCONFIG_REFRESH,7,286,252,14
+    DEFPUSHBUTTON   "Save",IDOK,109,309,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT_ITEM,203,172,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE_ITEM,203,190,50,14
+    PUSHBUTTON      "Add",IDC_ADD_FOOD,201,20,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT_FOOD,201,37,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE_FOOD,201,54,50,14
+    PUSHBUTTON      "Add Child",IDC_ADD_ITEM,203,155,50,14
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,7,309,50,14
+    PUSHBUTTON      "Sort Branch",IDC_ITEM_SORT,203,138,50,14
+    PUSHBUTTON      "?",IDC_HELP_INFO,203,240,50,14
+    PUSHBUTTON      "All Selected Into New Branch",IDC_SELECTEDTOBRANCH,203,
+                    208,50,29,BS_MULTILINE
+    CONTROL         "Tree1",IDC_ITEMCONFIG_ITEMSTREE,"SysTreeView32",
+                    WS_TABSTOP,13,89,185,188,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TOOL_ITEMCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 323
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ITEM_EDIT DIALOG DISCARDABLE  0, 0, 213, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Item Values..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Commit",IDOK,27,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,47,50,14
+    CTEXT           "Item Name:",IDC_STATIC,7,7,41,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "Item ID:",IDC_STATIC,7,28,41,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_ITEM_EDIT_NAME,53,7,153,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEM_EDIT_ID,53,28,32,14,ES_AUTOHSCROLL
+    CTEXT           "Type:",IDC_STATIC,89,28,41,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    COMBOBOX        IDC_TYPE,135,29,71,131,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FOOD_ADD DIALOG DISCARDABLE  0, 0, 186, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add an Item"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Add",IDOK,29,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,47,50,14
+    LTEXT           "Item Name:",IDC_STATIC,7,7,37,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    LTEXT           "Item ID:",IDC_STATIC,7,28,37,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_FOOD_ADD_NAME,55,7,124,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOOD_ADD_ID,55,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "Eat Time:",IDC_STATIC,99,28,32,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_FOOD_ADD_TIME,139,28,40,14,ES_AUTOHSCROLL
+END
+
+IDD_FOOD_EDIT DIALOG DISCARDABLE  0, 0, 186, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Item Values..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Commit",IDOK,27,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,47,50,14
+    LTEXT           "Item Name:",IDC_STATIC,7,7,37,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    LTEXT           "Item ID:",IDC_STATIC,7,28,37,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_FOOD_EDIT_NAME,55,7,124,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOOD_EDIT_ID,55,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "Eat Time:",IDC_STATIC,99,28,33,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_FOOD_EDIT_TIME,139,28,40,14,ES_AUTOHSCROLL
+END
+
+IDD_ITEM_ADD DIALOG DISCARDABLE  0, 0, 237, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add an Item"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Add",IDOK,29,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,65,50,14
+    CTEXT           "Item Name:",IDC_STATIC,7,7,44,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    CTEXT           "Item ID:",IDC_STATIC,7,28,44,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    EDITTEXT        IDC_ITEM_ADD_NAME,55,7,175,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ITEM_ADD_ID,55,28,40,14,ES_AUTOHSCROLL
+    CONTROL         "Add Branch",IDC_ITEM_ADD_BRANCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,48,72,12
+    CTEXT           "Type:",IDC_STATIC,100,28,44,14,SS_CENTERIMAGE | 
+                    WS_BORDER
+    COMBOBOX        IDC_TYPE,149,28,81,130,CBS_DROPDOWN | CBS_OWNERDRAWFIXED | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ITEM_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_ITEM_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "mod_itemconfig DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "mod_itemconfig\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "mod_itemconfig.DLL\0"
+            VALUE "ProductName", "mod_itemconfig Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECKS              BITMAP  DISCARDABLE     "res\\checks.bmp"
+IDB_ITEMS               BITMAP  DISCARDABLE     "res\\Items.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\mod_itemconfig.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
